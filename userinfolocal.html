@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="">
+        <title>Employee Information Table</title>
+        <link rel="stylesheet" href="userinfolocal.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="whole">
+            <h1>Employee Information</h1>
+            <form id="formid">
+                <input type="text" id="emp_id" placeholder="Employee ID" required>
+                <input type="text" id="ename" placeholder="Name" required>
+                <input type="email" id="email_id" placeholder="Email" required>
+                <input type="number" id="ephone" placeholder="Phone" required>
+            </form>
+            <button onclick="addinfo()" id="sub">Submit</button>
+            <div id="noData">
+                <h1>No Data...!</h1>
+            </div>
+            <table id="fulltable">
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Employee ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tablebodyid">
+                </tbody>
+            </table>
+        </div>
+        <script src="userinfolocal.js"></script>
+    </body>
+</html>
